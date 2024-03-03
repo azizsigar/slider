@@ -1,0 +1,39 @@
+.slider {
+    width: 100%;
+    max-width: 800px; /* Max width for responsiveness */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    margin: auto;
+    height: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
